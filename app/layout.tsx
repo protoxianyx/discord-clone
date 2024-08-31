@@ -10,7 +10,7 @@ import {
 } from "@clerk/nextjs";
 
 import { ThemeProvider } from "@/components/providers/theme-provider";
-import { ModalProvider } from "@/components/providers/modal-provider";
+
 import { cn } from "@/lib/utils";
 
 const inter = Open_Sans({ subsets: ["latin"] });
@@ -35,7 +35,7 @@ export default function RootLayout({
             enableSystem={false}
             storageKey="discord-theme"
           >
-            <ModalProvider />
+
             {/* FIXME: This Component above breaking the whole navigation bar */}
             {children}
           </ThemeProvider>
